@@ -252,7 +252,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .projeto-item h3 {
-    color: var(--texto-destaque);
+    color: var(--fundo);
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: normal;
@@ -289,7 +289,7 @@ body {
 }
 
 .projeto-item a {
-    color: var(--texto-destaque);
+    color: var(--fundo);
     text-decoration: none;
     display: inline-block; 
     margin-top: 15px; 
