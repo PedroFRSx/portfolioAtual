@@ -1,5 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Destaque do Menu Ativo (Intersection Observer)
+    //menu celular
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            document.body.classList.toggle('menu-open'); 
+        });
+
+        //fechar o menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
+    
+    //seções e animação de scroll
+
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-menu a');
     const navObserverOptions = {
