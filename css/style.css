@@ -449,33 +449,29 @@ body {
         padding: 30px 0;
     }
 
-    /* 2. MENU HAMBÚRGUER */
+    /*menu celular*/
     .header-container {
-        /* Usa Flexbox para colocar o nome/logo em um lado e o hambúrguer no outro */
         display: flex;
         justify-content: space-between; 
         align-items: center;
         padding-top: 15px;
-        /* Esconde a linha que antes estava separando o menu */
         border-bottom: none; 
     }
     .header-line {
-        display: none; /* Esconde a linha horizontal no mobile */
+        display: none;
     }
 
-    /* Exibe o botão Hambúrguer no celular */
     .menu-toggle {
         display: block; 
     }
 
-    /* Oculta o menu de navegação no desktop, e o transforma em um painel que desliza no mobile */
     .nav-menu {
         position: fixed;
         top: 0;
         right: 0; 
         width: 100%;
         height: 100vh;
-        background-color: #1a1a1a; 
+        background-color: var(--fundo); 
         flex-direction: column; 
         justify-content: center; 
         align-items: center;
@@ -485,20 +481,17 @@ body {
         margin: 0;
         z-index: 1000; 
     }
-    /* Estado que o JavaScript irá adicionar para mostrar o menu */
     .nav-menu.open {
-        transform: translateX(0); /* Desliza para a tela (visível) */
+        transform: translateX(0);
     }
 
     .nav-menu li {
-        margin: 20px 0; /* Espaço maior entre os links empilhados */
+        margin: 20px 0;
     }
     .nav-menu a {
-        font-size: 1.8em; /* Links maiores para toque */
+        font-size: 1.8em;
         padding: 10px 0;
     }
-    /* FIM DO BLOCO DO MENU HAMBÚRGUER */
-
     
     /*página inicial*/
     #home h1 {
